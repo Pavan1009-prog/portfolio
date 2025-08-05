@@ -393,16 +393,19 @@
             margin-bottom: 1rem;
         }
 
-        .education-logo {
+          .education-logo {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #22d3ee, #0ea5e9);
-            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(34, 211, 238, 0.2);
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            color: #000;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
         }
 
         .education-info h4 {
@@ -791,7 +794,35 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="section fade-in">
+   <section id="education" class="section fade-in">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="education-header">
+                    <div class="education-logo">
+                        <img src="assets/suny_buffalo_logo.png" alt="SUNY Buffalo Logo" />
+                    </div>
+                    <div class="education-info">
+                        <h4>State University of New York, Buffalo</h4>
+                        <p>Master of Professional Studies, Data Science</p>
+                        <p>2023 – 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-header">
+                    <div class="education-logo">
+                        <img src="assets/svu_logo.png" alt="Sri Venkateswara University Logo" />
+                    </div>
+                    <div class="education-info">
+                        <h4>Sri Venkateswara University, Tirupati</h4>
+                        <p>Bachelor of Technology, Electronics & Communications</p>
+                        <p>2017 – 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   <section id="education" class="section fade-in">
         <h2 class="section-title">Education</h2>
         <div class="education-grid">
             <div class="education-card">
